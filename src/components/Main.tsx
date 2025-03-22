@@ -1,6 +1,8 @@
 const Main = () => {
   return (
-    <div>Main</div>
+    <div className="mt-5">
+      Main
+    </div>
   )
 }
 
