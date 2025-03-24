@@ -5,7 +5,7 @@ import Main from "./components/Main"
 
 const App = () => {
   return (
-    <div className="bg-[#161616] h-screen px-16 py-8">
+    <div className="px-16 py-8">
       <Header />
       <Apresentation />
       <Main />

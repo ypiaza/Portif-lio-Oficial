@@ -14,7 +14,7 @@ const Apresentation = () => {
                     </div>
                     <div className="flex items-center gap-4 mt-8">
                         {btn.map((item, index) => (
-                            <button key={index} className={`border border-white/10 px-2 py-1.5 rounded-md text-white font-medium`}
+                            <button key={index} className={`border border-white/10 px-2 py-1.5 rounded-md text-white font-medium cursor-pointer`}
                                 style={{
                                     backgroundColor: item.color,
                                     boxShadow: `0 0 10px 5px ${item.color}70`
