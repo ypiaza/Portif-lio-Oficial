@@ -6,7 +6,7 @@ const Header = () => {
       <nav>
         <ul className='flex items-center justify-between'>
           {menu.map((item) => (
-            <li className='text-white font-medium hover:text-[#F35034] cursor-pointer duration-200'>
+            <li className='text-white font-medium hover:text-blue-500 cursor-pointer duration-100'>
               <a href={item.link}>{item.name}</a>
             </li>
           ))}

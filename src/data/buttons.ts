@@ -8,7 +8,7 @@ export const btn: itemBtn[] = [
     {
         link: '/',
         name: 'Me contrate',
-        color: '#F35034'
+        color: '#4D66FF'
     },{
         link: '/',
         name: 'Meu email',

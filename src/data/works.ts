@@ -5,9 +5,9 @@ export interface itemWork {
 }
 
 export const work: itemWork[] = [
-    {
+   {
         work: 'Ainda não tenho experência ',
-        currentlyWork: '#F35034',
+        currentlyWork: 'oklch(0.623 0.214 259.815)',
         business: 'Nenhuma'
         
     },
