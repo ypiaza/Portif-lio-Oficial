@@ -5,14 +5,14 @@ import Works from "./Works"
 
 const Main = () => {
   return (
-    <div className="mt-5 h-full grid grid-cols-2 gap-5">
-      <div className="grid h-full w-full gap-5">
+    <div className="mt-3 h-full grid grid-cols-2 gap-3">
+      <div className="grid h-full w-full gap-3">
         <Works />
         <Projects />
         <MoreProjects />
       </div>
 
-      <div className="grid h-full w-full gap-5">
+      <div className="grid h-full w-full gap-3">
         <Skills />
         <Projects />
         <Projects />

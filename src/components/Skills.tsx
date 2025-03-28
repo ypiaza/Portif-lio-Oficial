@@ -11,7 +11,7 @@ const Skills = () => {
         onMouseOver={() => setHoverIcon(index)}
         onMouseOut={() => setHoverIcon(false)}>
           <item.icon className='z-50'/>
-          <span className={`absolute block w-full h-0 bg-blue-500 right-0 bottom-0 duration-75 ${hoverIcon === index ? 'h-full' : 'delay-300 duration-700'}`}></span>
+          <span className={`absolute block w-full h-0 bg-blue-500/70 right-0 bottom-0 duration-75 ${hoverIcon === index ? 'h-full' : 'delay-300 duration-700'}`}></span>
         </div>
       ))}
     </div>
