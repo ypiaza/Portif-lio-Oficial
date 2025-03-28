@@ -7,10 +7,10 @@ const Projects = () => {
   const [hoverAnimation, setHoverAnimation] = useState<number | false>(false)
 
   return (
-    <div className="flex items-center justify-center px-12 py-14 rounded-3xl border border-white/10 bg-[#202020] duration-300 hover:border-blue-500/70 hover:shadow-2xl hover:shadow-blue-500/50 hover:scale-3d  hover:bg-blue-500/50 overflow-hidden">
+    <div className={`flex items-center justify-center px-12 py-14 rounded-3xl border border-white/10 bg-[#202020] duration-300 hover:border-blue-500/70 hover:shadow-2xl hover:shadow-blue-500/50 hover:scale-3d  hover:bg-blue-500/50 overflow-hidden ${hoverAnimation ? '' : ''}`}>
       {projects.map((item, index) => (
         <div 
-          className="cursor-pointer"
+          className="cursor-pointer perspective-distant"
           onMouseOver={() => setHoverAnimation(index)}
           onMouseOut={() => setHoverAnimation(false)}>
           <div className="relative">
@@ -20,7 +20,7 @@ const Projects = () => {
               <FaArrowAltCircleRight className="text-4xl -rotate-40 text-white/80" />
             </span>
           </div>
-          <img src={item.img} className={`rounded-2xl w-[30rem] mt-10 duration-300 transform-3d scale-3d ${hoverAnimation === index ? '-rotate-3 scale-103 shadow-2xl shadow-black/50' : ''}`} />
+          <img src={item.img} className={`rounded-2xl w-[30rem] mt-10 duration-300 translate-3d transform-3d scale-3d ${hoverAnimation === index ? 'rotate-x-12 -rotate-y-3 -rotate-z-3 scale-110  shadow-2xl shadow-black/50' : ''}`} />
         </div>
       ))}
     </div>
