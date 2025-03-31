@@ -3,7 +3,7 @@ import AvaliableForJob from "./AvaliableForJob"
 
 const Apresentation = () => {
     return (
-        <div className=" grid grid-cols-2 items-center justify-between h-[25rem] px-12 py-14 rounded-3xl border border-white/10 bg-[#202020] mt-3">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 items-center justify-between h-full lg:h-[25rem] px-12 py-14 rounded-3xl border border-white/10 bg-[#202020] mt-3">
             <div className="h-full flex flex-col items-start justify-between">
                 <div>
                     <h1 className="text-white/70">Desenvolvedor Frontend</h1>
@@ -26,7 +26,7 @@ const Apresentation = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col items-end w-full h-full">
+            <div className="hidden lg:flex flex-col items-end w-full h-full">
                 <div className="flex flex-col items-center justify-between h-full">
                     <AvaliableForJob />
                     <div>

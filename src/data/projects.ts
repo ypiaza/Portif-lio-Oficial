@@ -1,4 +1,5 @@
 export interface itemProjects {
+    id: number,
     project: string,
     link: string,
     img: string,
@@ -6,7 +7,9 @@ export interface itemProjects {
 }
 
 export const projects : itemProjects[] = [
-    {project: 'Clone Spotify', link:'/', img:'../src/assets/spotify/img1.png', description: 'Feito em React, JavaScript, Tailwind CSS'}
+    {id: 1, project: 'Clone Spotify', link:'/', img:'../src/assets/spotify/img1.png', description: 'Feito em React, JavaScript, Tailwind CSS'},
+    {id: 2, project: 'To Do List', link:'/', img:'../src/assets/ToDoList/img2.png', description: 'Feito puramente em Html, CSS e javascript'},
+    {id: 3, project: 'Clone Spotify', link:'/', img:'../src/assets/spotify/img1.png', description: 'Feito em React, JavaScript, Tailwind CSS'},
 ]
 
 export interface itemMoreProjects {
