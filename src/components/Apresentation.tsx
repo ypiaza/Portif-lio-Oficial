@@ -42,7 +42,7 @@ const Apresentation = () => {
                 <div className="flex flex-col items-center justify-between h-full">
                     <AvaliableForJob />
                     <div>
-                        <img className="rounded-full border-8 border-white/10" src='https://placehold.co/200' alt="Me" />
+                        <img className="rounded-full w-52 border-6 shadow-2xl bg-center bg-cover border-white/10" src='../src/assets/me.png' alt="Me" />
                     </div>
                 </div>
             </div>

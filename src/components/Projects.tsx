@@ -4,10 +4,11 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 interface ProjectProps {
   project: string;
   description: string;
-  img: string;
+  img: string,
+  link: string
 }
 
-const Projects: React.FC<ProjectProps> = ({ project, description, img }) => {
+const Projects: React.FC<ProjectProps> = ({ project, description, img, link }) => {
   const [hoverAnimation, setHoverAnimation] = useState<number | false>(false);
 
   return (
@@ -18,6 +19,7 @@ const Projects: React.FC<ProjectProps> = ({ project, description, img }) => {
         className="cursor-pointer perspective-distant"
         onMouseOver={() => setHoverAnimation(1)}  
         onMouseOut={() => setHoverAnimation(false)}
+        onClick={() => window.open(link)}
       >
         <div className="relative">
           <h3 className="text-2xl text-white font-bold">{project}</h3>

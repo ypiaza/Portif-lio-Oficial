@@ -10,7 +10,7 @@ const Main = () => {
       <div className="grid h-full w-full gap-3">
         <Works />
         {projects.filter((item) => item.id === 1).map((item) => (
-          <Projects description={item.description} img={item.img} project={item.project} />
+          <Projects description={item.description} img={item.img} project={item.project} link={item.link} />
         ))}
         <MoreProjects />
       </div>
@@ -18,10 +18,10 @@ const Main = () => {
       <div className="grid h-full w-full gap-3">
         <Skills />
         {projects.filter((item) => item.id === 2).map((item) => (
-          <Projects description={item.description} img={item.img} project={item.project} />
+          <Projects description={item.description} img={item.img} project={item.project} link={item.link} />
         ))}
         {projects.filter((item) => item.id === 3).map((item) => (
-          <Projects description={item.description} img={item.img} project={item.project} />
+          <Projects description={item.description} img={item.img} project={item.project} link={item.link} />
         ))}
       </div>
     </div>
